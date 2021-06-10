@@ -1,0 +1,115 @@
+.firstsection{
+    padding-top: 20px;
+}
+
+.firstsection__imgs{
+    width: 100%;
+    background-image: url(/images/bg-intro-mobile.svg);
+    background-repeat: no-repeat;
+    background-position-y: -1.8em;
+    background-size: 100%;
+}
+
+.firstsection__imgs img{
+    display: block;
+    margin: auto;
+    width: 96%;
+    transform: translatey(-7em);
+    z-index: 10;
+}
+
+.firstsection_text{
+    transform: translateY(-6em);
+    text-align: center;
+}
+
+.firstsection_text h1{
+    margin: auto;
+    width: 90%;
+    font-size: 2.1em;
+    font-weight: 400;
+    color: var(--darkblue);
+}
+
+.firstsection_text p {
+    color: var(--grayishblue);
+    margin: auto;
+    margin-top: 1.6em;
+    width: 90%;
+    font-size: 0.8em;
+    line-height: 1.8em;
+}
+
+.button {
+    background-image: linear-gradient(to right, #39ce6d, #00cc93, #00c8b2, #00c2c6, #32bacf);
+    font-family: 'Public Sans', sans-serif;
+    margin-top: 2em;
+    color: var(--white);
+    padding: 1em 2.2em 1em;
+    border: none;
+    border-radius: 2em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.button:hover{
+    filter: brightness(1.5);
+}
+
+.button:focus{
+    outline: none;
+}
+
+/* Media querys */
+
+@media screen and (min-width: 769px){
+    .firstsection {
+        width: 89%;
+        float: right;
+    }
+    
+    .firstsection__imgs{
+        width: 60%;
+        background-image: url(/images/bg-intro-desktop.svg);
+        background-repeat: no-repeat;
+        background-position-y: -14em;
+        background-position-x: -2em;
+        background-size: 170%;
+        float: right;
+        height: 41em;
+    }
+    
+    .firstsection__imgs img{
+        display: block;
+        margin: auto;
+        width: 100%;
+        transform: translate(6em,-6em);
+    }
+
+    .firstsection_text{
+        transform: translate(0);
+        text-align: left;
+        float: left;
+        width: 40%;
+        margin-top: 15%;
+    }
+
+    .firstsection_text h1{
+        width: 100%;
+        margin: 0;
+        font-size: 2.8em;
+    }
+    
+    .firstsection_text p {
+        width: 100%;
+        margin: 2em 0;
+        font-size: 0.9em;
+        line-height: 1.6em;
+    }
+
+    .button{
+        margin-top: 0.6em;
+    }
+    
+}

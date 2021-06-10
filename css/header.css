@@ -1,0 +1,133 @@
+
+
+header{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 100;
+}
+
+.nav__contain{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn__nav{
+    outline: none;
+    background-color: var(--white);
+    border: none;
+}
+
+
+.cruz{
+    width: 80%;
+}
+
+.desplegable__contain{
+    opacity: 0;
+    transition: all 0.5s ease;
+    background: linear-gradient(0deg,rgba(255,255,255,0) 0%, rgba(23,28,74,0.87) 80%);
+    width: 100%;
+    margin-top: 20px;
+    position: absolute;
+}
+
+
+.desplegable{
+    opacity: 0;
+    transition: all 0.5s ease;
+    width: 86%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    box-shadow: 0px 140px 120px 60px rgba(55, 57, 83, 0.5);
+}
+
+.desplegable a{
+    margin-top: 24px;
+    color: var(--darkblue);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.secciones{
+    display: none;
+}
+
+.button__desktop{
+    display: none;
+}
+
+.display__none{
+    display: none;
+}
+
+.display__visible{
+    display: flex;
+    opacity: 1;
+}
+
+@media screen and (min-width: 960px){
+
+    .display__media{
+        display: none;
+    }
+
+    .btn__nav{
+        display: none;
+    }
+
+    .button__desktop{
+        display: inline;
+        font-size: 15px;
+        background-image: linear-gradient(to right, #39ce6d, #00cc93, #00c8b2, #00c2c6, #32bacf);
+        font-family: 'Public Sans', sans-serif;
+        color: var(--white);
+        padding: 1.0em 2.2em 1.0em;
+        border: none;
+        border-radius: 2em;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.5s ease;
+    }
+
+    .secciones{
+        display: inline;
+    }
+
+
+    .button__desktop:hover{
+        filter: brightness(1.5);
+    }
+
+    .nav__contain{
+        align-items: center;
+        width: 78%;
+    }
+
+    .secciones a{
+        padding-bottom: 32px;
+        font-size: 16px;
+        margin-left: 25px;
+        text-decoration: none;
+        color: var(--grayishblue);
+        transition: all 0.2s ease;
+    }
+
+    a:hover{
+        color: black;
+        border-bottom: 4px solid transparent;
+        border-image: linear-gradient(to right,#39ce6d, #00cc93, #00c8b2, #00c2c6, #32bacf 100%) 1;
+    }
+}
+    

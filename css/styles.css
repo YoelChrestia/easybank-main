@@ -1,0 +1,38 @@
+@import url('header.css');
+@import url('firstsection.css');
+@import url('secondsection.css');
+@import url('footer.css');
+@import url('latestarticles.css');
+
+
+/* Reseto de Estilos */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-size: 18px;
+    font-family: 'Public Sans', sans-serif; /* Weights: 300, 400, 700 */
+    overflow-x: hidden;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+/* Variables */
+
+:root{
+    --darkblue: hsl(233, 26%, 24%);
+    --limegreen: hsl(136, 65%, 51%);
+    --rightcyan: hsl(192, 70%, 51%);
+
+    --grayishblue: hsl(233, 8%, 62%);
+    --lightgrayishblue: hsl(220, 16%, 96%);
+    --verylightgray: hsl(0, 0%, 98%);
+    --white: hsl(0, 0%, 100%);
+}
